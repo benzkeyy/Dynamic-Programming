@@ -19,7 +19,7 @@ int main()
 	for(int i = 1; i <= n; i++) dp[i] = INT_MAX;
 	int i,x;
 	for(i = 1; i <= n; i++)
-		for(x = 0; x <= 3; x++) // Here, x usually arr.length but here it is fixed = 3
+		for(x = 0; x < 3; x++) // Here, x usually arr.length but here it is fixed = 3
 			if(i - arr[x] >= 0)
 				dp[i] = min(dp[i],dp[i-arr[x]] + 1);
 	for(auto a : dp)
