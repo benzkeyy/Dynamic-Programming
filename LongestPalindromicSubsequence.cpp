@@ -3,9 +3,10 @@
   Level - Medium
   Uses O(n^2) space!
 */
-// Code only contains the function which accepts the string **'s'** and returns the -LENGTH- of the longest palindromic sub**sequence**!
 
- int longestPalindromeSubseq(string s) 
+Code only contains the function which accepts the string 's' and returns the -LENGTH- of the longest palindromic sub'sequence'!
+
+ int longestPalindromeSubsequence(string s) 
     {
         int i,j,l,n=s.size();
         int dp[n][n];
