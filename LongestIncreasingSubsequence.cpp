@@ -22,3 +22,6 @@
         }
         return *max_element(dp,dp+n);
     }
+---------------------------------------------------------------------------------------------------------------------
+// ANOTHER GOOD APPROACH USING LCS!
+// Just use LCS, pass one parameter as the array itself, and the second paramater as the sorted array!...
