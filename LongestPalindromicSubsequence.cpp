@@ -36,3 +36,6 @@ Code only contains the function which accepts the string 's' and returns the -LE
         }
         return dp[0][n-1];
     }
+---------------------------------------------------
+ USING LCS! we can do it too.
+  // Just reverse the string s and apply LongestCommonSubsequence(string s,string s_reversed) !
