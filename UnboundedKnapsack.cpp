@@ -14,7 +14,7 @@ int knapsack(int W, int wt[], int val[], int n)
 			}
 			else if(wt[i-1] <= j)
 			{
-				dp[i][j] = max(val[i-1] + dp[i][j-wt[i-1]], dp[i-1][j])
+				dp[i][j] = max(val[i-1] + dp[i][j-wt[i-1]], dp[i-1][j]);
 			}
 			else
 			{
@@ -44,7 +44,7 @@ int rod_cut(int n,int prices[],int length[], int size)
 			}
 			else if(length[i-1] <= j)
 			{
-				dp[i][j] = max(prices[i-1] + dp[i][j-length[i-1]], dp[i-1][j])
+				dp[i][j] = max(prices[i-1] + dp[i][j-length[i-1]], dp[i-1][j]);
 			}
 			else
 			{
