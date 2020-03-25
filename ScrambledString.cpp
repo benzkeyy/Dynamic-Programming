@@ -25,6 +25,7 @@ unordered_map<string,bool>mp;
               )
             {
                 flag = true;
+                break;
             }
         }
         mp[key] = flag;
