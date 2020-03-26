@@ -1,7 +1,7 @@
 /*
 
 https://leetcode.com/problems/diameter-of-binary-tree/
-Done in O(n)
+Done in O(n) */
 
 
  int dp(TreeNode* root, int &res)
@@ -26,5 +26,3 @@ Done in O(n)
         dp(root,res);
         return res-1;
     }
-    
-*/
