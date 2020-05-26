@@ -18,6 +18,8 @@
                     dp[i][j] = max(dp[i][j-1],dp[i-1][j]);
             }
         }
+        // If it is asking for only length, then return dp[n1][n2]; and for ans - > n1 + n2 - dp[n1][n2] !!
+  
         int i = text1.length(); int j = text2.length(); string s;
         int index=dp[n1][n2];
         while(i > 0 && j > 0)
