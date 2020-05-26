@@ -94,13 +94,13 @@
  
  -----------------------------------------------------------
  // For substring, we do little modification!
-  int longestCommonSubsequence(string text1, string text2) 
+  int longestcommonsubstring(string text1, string text2) 
     {
         int n1 = text1.length(),n2=text2.length();
         if(n1 == 0 || n2 == 0) return 0;
         
         int dp[n1+1][n2+1];
-        
+        int maxi = INT_MIN;
         for(int i = 0; i <= n1; i++)
         {
             for(int j = 0; j <= n2; j++)
@@ -111,8 +111,11 @@
                     dp[i][j] = 1 + dp[i-1][j-1];
                 
                 else
-                    dp[i][j] = 0 // Only this is modified.. because we are finding a substring
+                    dp[i][j] = 0;
+                    
+                maxi = max(maxi,dp[i][j]);
+                    // Only this is modified.. because we are finding a substring
             }
         }
-        return dp[n1][n2];
+        return maxi;
     }
